@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Levenshtein Viewer</title>
+        <meta charset="utf-8" />
+        <link href="style/levenshtein.css" rel="stylesheet" />
+        <script src="skript/levenshtein.js"></script>
+        <!-- <script src="skript/homepage.js"></script> -->
+    </head>
+    <body>
+        <div id = "button">
+            <button id="bt1" onclick="showCat1()">Abweichungen Kat 1</button>
+            <button id="bt2" onclick="showCat2()">Abweichungen Kat 2</button>
+            <button id="bt3" onclick="showAllCat()">Alle Abweichungen</button>
+            <button id="bt4" onclick="showNoCat()">Keine Abweichungen</button>
+        </div>
+        <div id = "table">
+            <table id = "text">
+                <tr>
+                    <td class = "vers">
+                        <ul>
+                            <li class = "referenz">Gnædich vnde gewaltich got</li>
+                            <li class = "hsa" value  = "0,2">Gænedik vn̄ gewaltik got</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "vers">
+                        <ul>
+                            <li class = "referenz">dein helig͛ wille vn̄ dein gebot</li>
+                            <li class = "hsa" value = "0,3">din haliger wille vn̄ dingebot</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
