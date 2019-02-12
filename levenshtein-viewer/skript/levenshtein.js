@@ -1,60 +1,51 @@
-cat1active = false;
-cat2active = false;
-cat3active = false;
+var activeCats = {
+    1 : [0, true],
+    2 : [0.05, true],
+    3 : [0.18, true],
+    4 : [1, true],
+    5 : ['zusatz', true],
+    6 : ['alle', false]
+};
 
-/*Felix Käfer, [10.02.19 14:20]
-const buttons = document.querySelectorAll("li");
-
-Felix Käfer, [10.02.19 14:20]
-bzw. var statt const wenn du noches5 schreibst
-
-Felix Käfer, [10.02.19 14:21]
-buttons.forEach((element) => {
- if(element.value)...
-});
-for (var i = 0; i < buttons.length; ++i) {
-  //do stuff
-} */
 window.onload = function() {
     console.log('Dokument geladen');
 };
 
-
-function showCat1(th){
-    console.log(th);
-    cat1 = document.querySelectorAll("li");
-    cat1.forEach(element => {
-        if(element.getAttribute('value') != null && element.getAttribute('value') <= th){
-            ishidden = element.style.visibility == 'hidden';
-            if(ishidden){
-                element.style.visibility = "";
-            } else {
-                element.style.visibility = "hidden";
-            }
-        }
-    });
-    
+function showCat1(inp){
+    var th = activeCats[inp][0];
+   console.log(th);
+   cat1 = document.querySelectorAll("li");
+   isHidden = activeCats[inp][1];
+   var newVisibility = getNewVisibility(isHidden);
+   cat1.forEach(element => {
+       if(element.getAttribute('value') != null && element.getAttribute('value') <= th){
+           element.style.visibility = newVisibility;
+       }
+   });
+    activeCats[inp][1] = !activeCats[inp][1];
 }
 
-function showCat2(){
-    cat2 = document.querySelectorAll("li[value='0,3']")[0];
-    if(cat2active){
-        cat2active = false;
-        cat2.style.visibility = 'hidden';
+function showAll(){
+    isHidden = activeCats[6][0];
+    for(category in activeCats){
+        activeCats[category][1] = !isHidden
+    }
+    liArray = document.querySelectorAll("li[value]");
+    var newVisibility = getNewVisibility(isHidden);
+    hideElements(liArray, newVisibility);
+    activeCats[6][0] = !activeCats[6][0];
+}
+
+function getNewVisibility(isHidden){
+    if(isHidden){
+        return '';
     } else {
-        cat2active = true;
-        cat2.style.visibility = '';
+        return 'hidden';
     }
 }
-function showAllCat(){
-    cat1active = true;
-    cat2active = true;
-    cat1.style.visibility = '';
-    cat2.style.visibility = '';
-}
-function showNoCat(){
-    cat1 = document.querySelectorAll("li[value='0,2']")[0];
-    cat2 = document.querySelectorAll("li[value='0,3']")[0];
-    cat1.style.visibility = 'hidden';
-    cat2.style.visibility = 'hidden';
+
+function hideElements(liArray, newVisibility){
+    liArray.forEach(element => {
+        element.style.visibility = newVisibility;
+    })
 }
