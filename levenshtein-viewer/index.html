@@ -18,6 +18,20 @@
            <!--  <button id="bt6" onclick="showAllCat()">Alle Abweichungen</button>
             <button id="bt7" onclick="showNoCat()">Keine Abweichungen</button> -->
         </div>
+        <select onchange="showCat2(this.value)">
+            <optgroup label="Abweichungsgrad">
+                <option value="5">Zusatzverse</option>
+                <option value="1">Kategorie 1</option>
+                <option value="2">Kategorie 2</option>
+                <option value="3">Kategorie 3</option>
+                <optgroup label="Kategorie 4">
+                    <option value="4a">Kategorie 4a</option>
+                    <option value="4b">Kategorie 4b</option>
+                    <option value="4c">Kategorie 4c</option>
+                </optgroup>
+                
+            </optgroup>
+        </select>
         <div id = "table">
             <table id = "text">
                 <tr>
@@ -26,7 +40,7 @@
                             <li class = "referenz">Gnædich vnde gewaltich got</li>
                             <li class = "hsa" value  = "0.31">Gænedik vn̄ gewaltik got</li>
                             <li class = "hsc" value  = "0.35">Genaͤdig vn̄ gewaltig got</li>
-                            <li class = "hsl" value  = "0.22">Genaͤdig vn̄ gewaltig got</li>
+                            <li class = "hsl" value  = "0.8">Genaͤdig vn̄ gewaltig got</li>
                         </ul>
                     </td>
                 </tr>
@@ -35,7 +49,7 @@
                         <ul>
                             <li class = "referenz">dein helig͛ wille vn̄ dein gebot</li>
                             <li class = "hsa" value = "0.16">din haliger wille vn̄ din gebot</li>
-                            <li class = "hsc" value = "0.19">din hailig wille vn̄ din  gebot</li>
+                            <li class = "hsc" value = "0.5">din hailig wille vn̄ din  gebot</li>
                             <li class = "hsl" value = "0.24">din heiliger vville vnt din gebot</li>
                         </ul>
                     </td>
@@ -44,7 +58,7 @@
                     <td class = "vers">
                         <ul>
                             <li class = "referenz">dein helig͛ wille vn̄ dein gebot</li>
-                            <li class = "hsa" value = "0.16">din haliger wille vn̄ din gebot</li>
+                            <li class = "hsa" value = "0.9">din haliger wille vn̄ din gebot</li>
                             <li class = "hsc" value = "0.19">din hailig wille vn̄ din  gebot</li>
                             <li class = "hsl" value = "0.24">din heiliger vville vnt din gebot</li>
                         </ul>
