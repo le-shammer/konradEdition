@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Levenshtein Viewer</title>
+        <meta charset="utf-8" />
+        <link href="style/levenshtein.css" rel="stylesheet" />
+        <script src="skript/levenshtein.js"></script>
+        <!-- <script src="skript/homepage.js"></script> -->
+    </head>
+    <body>
+        <div id = "button">
+            <button id="bt1" onclick="showCat1(1)">Abweichungen Kat 1</button>
+            <button id="bt2" onclick="showCat1(2)">Abweichungen Kat 2</button>
+            <button id="bt3" onclick="showCat1(3)">Abweichungen Kat 3</button>
+            <button id="bt4" onclick="showCat1(4)">Abweichungen Kat 4</button>
+            <button id="bt5" onclick="showCat1(5)">Zusatzverse</button>
+            <button id="bt6" onclick="showAll()">Alle Verse</button>
+           <!--  <button id="bt6" onclick="showAllCat()">Alle Abweichungen</button>
+            <button id="bt7" onclick="showNoCat()">Keine Abweichungen</button> -->
+        </div>
+        <div id = "table">
+            <table id = "text">
+                <tr>
+                    <td class = "vers">
+                        <ul>
+                            <li class = "referenz">Gnædich vnde gewaltich got</li>
+                            <li class = "hsa" value  = "0.31">Gænedik vn̄ gewaltik got</li>
+                            <li class = "hsc" value  = "0.35">Genaͤdig vn̄ gewaltig got</li>
+                            <li class = "hsl" value  = "0.22">Genaͤdig vn̄ gewaltig got</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "vers">
+                        <ul>
+                            <li class = "referenz">dein helig͛ wille vn̄ dein gebot</li>
+                            <li class = "hsa" value = "0.16">din haliger wille vn̄ din gebot</li>
+                            <li class = "hsc" value = "0.19">din hailig wille vn̄ din  gebot</li>
+                            <li class = "hsl" value = "0.24">din heiliger vville vnt din gebot</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "vers">
+                        <ul>
+                            <li class = "referenz">dein helig͛ wille vn̄ dein gebot</li>
+                            <li class = "hsa" value = "0.16">din haliger wille vn̄ din gebot</li>
+                            <li class = "hsc" value = "0.19">din hailig wille vn̄ din  gebot</li>
+                            <li class = "hsl" value = "0.24">din heiliger vville vnt din gebot</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "vers">
+                        <ul>
+                            <li class = "referenz">mvzze an vns aller ergen</li>
+                            <li class = "hsa" value = "0.21">mvͤzze an vnſ alſo ergen</li>
+                            <li class = "hsc" value = "0.44">Muͤſſe an uͥnſ alſo ergan</li>
+                            <li class = "hsl" value = "0.25">mvͤze an vns ſo er gen</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "vers">
+                        <ul>
+                            <li class = "referenz">daz wir froͤlichen erſten</li>
+                            <li class = "hsa" value = "0.08">daz wir froͤlich erſten</li>
+                            <li class = "hsc" value = "0.24">Dc wir vroͤlich erſtan</li>
+                            <li class = "hsl" value = "0.12">daz vvir vroͤlichen erſten</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
