@@ -15,7 +15,7 @@ var main = function () {
     lastChapter();
     showzusatz();
     showzusatz();
-    checkpw();
+    //checkpw();
 
 }
 

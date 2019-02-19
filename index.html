@@ -4,9 +4,11 @@
         <title>Kindheit Jesu</title>
         <meta charset="utf-8" />
         <link href="homepage.css" rel="stylesheet" />
-        <script src="jquery-1.8.3.min.js"></script>
+        <link href="levenshtein.css" rel="stylesheet" />
+        <script src="skript/jquery-3.3.1.min.js"></script>
 <!--        <script src="jquery.elevatezoom.js"></script>-->
         <script src="skript/homepage.js"></script>
+        <script src="skript/levenshtein.js"></script>
 
     </head>
     <body>
@@ -78,33 +80,72 @@
             <!-- col 1 -->
             <p/>
             <div class="containter left col" id="col1">
-                <div class="placeholderforscript">
-                    <select id="c1">
-                        <option class="choose" value="leer">Bitte wählen</option>
-                        <optgroup label="Handschrift B">
-                            <option value="bf">*Faksimile HS B</option>
-                            <option value="bt">*Transkripton HS B</option>
+                <select onchange="showCat2(this.value)">
+                    <optgroup label="Abweichungsgrad">
+                        <option value="5">Zusatzverse</option>
+                        <option value="1">Kategorie 1</option>
+                        <option value="2">Kategorie 2</option>
+                        <option value="3">Kategorie 3</option>
+                        <optgroup label="Kategorie 4">
+                            <option value="4a">Kategorie 4a</option>
+                            <option value="4b">Kategorie 4b</option>
+                            <option value="4c">Kategorie 4c</option>
                         </optgroup>
-                        <optgroup label="Handschrift A">
-                            <option value="af">*Faksimile HS A</option>
-                            <option value="at">*Transkripton HS A</option>
-                        </optgroup>
-                        <optgroup label="Handschrift C">
-                            <option value="cf">*Faksimile HS C</option>
-                            <option value="ct">*Transkripton HS C</option>
-                        </optgroup>
-                        <optgroup label="Handschrift L">
-                            <option value="lf">*Faksimile HS L</option>
-                            <option value="lt">*Transkripton HS L</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="fill" id="fill1">
-                    <table>
-                        <tr><td class="iteration"><span></span></td><td class="verszeile"><span>Bitte zuerst links das gewünschtes Kapitel wählen</span></td></tr>
-                        <tr><td class="iteration"><span></span></td><td class="verszeile"><span>Dann in den Spalten oben die gewünschte Ansicht auswählen</span></td></tr>
-                        <tr><td class="iteration"><span></span></td><td class="verszeile"><span>Faksimile-Ansicht: Mausklick zum Vergrößern der Ansicht in einem neuen Tab</span></td></tr>
-                        <tr><td class="iteration"><span></span></td><td class="verszeile"><span>Nur die mit * markierten Funktionen sind derzeit freigeschaltet</span></td></tr>
+                        
+                    </optgroup>
+                </select>
+                <div id = "table">
+                    <table id = "text">
+                        <tr>
+                            <td class = "vers">
+                                <ul>
+                                    <li class = "referenz"><p></p><p>Gnædich vnde gewaltich got</p></li>
+                                    <li class = "hsa compare" value  = "0.31"><p></p><p>Gænedik vn̄ gewaltik got</p></li>
+                                    <li class = "hsc compare" value  = "0.35"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
+                                    <li class = "hsl compare" value  = "0.8"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "vers">
+                                <ul>
+                                    <li class = "referenz"><p></p><p>dein helig͛ wille vn̄ dein gebot</p></li>
+                                    <li class = "hsa compare" value = "0.16"><p></p><p>din haliger wille vn̄ din gebot</p></li>
+                                    <li class = "hsc compare" value = "0.5"><p></p><p>din hailig wille vn̄ din  gebot</p></li>
+                                    <li class = "hsl compare" value = "0.24"><p></p><p>din heiliger vville vnt din gebot</p></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "vers">
+                                <ul>
+                                    <li class = "referenz"><p></p><p>dein helig͛ wille vn̄ dein gebot</p></li>
+                                    <li class = "hsa compare" value = "0.9"><p></p><p>din haliger wille vn̄ din gebot</p></li>
+                                    <li class = "hsc compare" value = "0.19"><p></p><p>din hailig wille vn̄ din  gebot</p></li>
+                                    <li class = "hsl compare" value = "0.24"><p></p><p>din heiliger vville vnt din gebot</p></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "vers">
+                                <ul>
+                                    <li class = "referenz"><p></p><p>mvzze an vns aller ergen</p></li>
+                                    <li class = "hsa compare" value = "0.21"><p></p><p>mvͤzze an vnſ alſo ergen</p></li>
+                                    <li class = "hsc compare" value = "0.44"><p></p><p>Muͤſſe an uͥnſ alſo ergan</p></li>
+                                    <li class = "hsl compare" value = "0.25"><p></p><p>mvͤze an vns ſo er gen</p></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "vers">
+                                <ul>
+                                    <li class = "referenz"><p></p><p>daz wir froͤlichen erſten</p></li>
+                                    <li class = "hsa compare" value = "0.08"><p></p><p>daz wir froͤlich erſten</p></li>
+                                    <li class = "hsc compare" value = "0.24"><p></p><p>Dc wir vroͤlich erſtan</p></li>
+                                    <li class = "hsl compare" value = "0.12"><p></p><p>daz vvir vroͤlichen erſten</p></li>
+                                </ul>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
