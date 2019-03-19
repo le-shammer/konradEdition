@@ -1,4 +1,3 @@
-
 //Erstes Element in Liste gibt Levenshtein-Grenzwert an; zweiter Wert kann für "Toggle" Option genutzt werden
 var activeCats = {
     1 : [0, true],
@@ -13,8 +12,26 @@ var activeCats = {
 
 window.onload = function() {
     console.log('Dokument geladen');
-    //hideOnLoad();
+    resetSelects();
+    addToolTip();
 };
+
+function addToolTip(){
+    const reference = document.querySelector('.infobox');
+    new Tooltip(reference, {
+        placement: 'bottom', // or bottom, left, right, and variations
+        title: "Wie funktionieren die Distanzen?"
+    }); 
+
+
+}
+
+function resetSelects(){
+    selectlist = document.querySelectorAll("select");
+    selectlist.forEach(element => {
+        element.selectedIndex = "0";
+    });
+}
 
 function hideOnLoad(){
     showCat(6);
@@ -35,11 +52,6 @@ function showCat(inp){
    });
     activeCats[inp][1] = !activeCats[inp][1];
 }
-
-function toggleAdditionVerses(element){
-    element.classList.toggle("toggle");
-}
-
 function showAll(){
     isHidden = activeCats[6][0];
     for(category in activeCats){
@@ -64,3 +76,7 @@ function hideElements(liArray, newVisibility){
         element.style.visibility = newVisibility;
     })
 }
+
+
+
+
