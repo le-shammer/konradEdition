@@ -133,8 +133,11 @@ table {
 tr {
     height: 2.8em;
 }
-tr:nth-child(even) {background: white}
-tr:nth-child(odd) {background: #f1f1f1}
+.vers:nth-child(even) {background: white}
+.vers:nth-child(odd) {background: #f1f1f1}
+.vers{
+    min-height: 3em;
+}
 select{
     /* irrelevante Eigenschaften gekürzt */
     position: sticky;

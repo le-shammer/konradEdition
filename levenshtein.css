@@ -2,8 +2,21 @@ ul {
     list-style-type: none;
   }
 .compare{
-  padding:2.5px 25px;
+  height: 2em;
+  padding: 2.5px 25px;
 }
-.referenz{
-  padding-left: 0%;
+.comparehidden{
+  visibility: hidden;
+  height: 0;
+}
+
+
+.toggle .compare{
+  visibility: hidden;
+  height: 0;
+}
+
+.info{
+  text-align: left;
+  font-size: x-small;
 }
