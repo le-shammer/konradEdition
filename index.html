@@ -80,7 +80,7 @@
             <!-- col 1 -->
             <p/>
             <div class="containter left col" id="col1">
-                <select onchange="showCat2(this.value)">
+                <select onchange="showCat(this.value)">
                     <optgroup label="Abweichungsgrad">
                         <option value="5">Zusatzverse</option>
                         <option value="1">Kategorie 1</option>
@@ -94,59 +94,40 @@
                         
                     </optgroup>
                 </select>
+                <p>Bitte Abweichungsgrad angeben!</p>
                 <div id = "table">
-                    <table id = "text">
-                        <tr>
-                            <td class = "vers">
-                                <ul>
-                                    <li class = "referenz"><p></p><p>Gnædich vnde gewaltich got</p></li>
-                                    <li class = "hsa compare" value  = "0.31"><p></p><p>Gænedik vn̄ gewaltik got</p></li>
-                                    <li class = "hsc compare" value  = "0.35"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
-                                    <li class = "hsl compare" value  = "0.8"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class = "vers">
-                                <ul>
-                                    <li class = "referenz"><p></p><p>dein helig͛ wille vn̄ dein gebot</p></li>
-                                    <li class = "hsa compare" value = "0.16"><p></p><p>din haliger wille vn̄ din gebot</p></li>
-                                    <li class = "hsc compare" value = "0.5"><p></p><p>din hailig wille vn̄ din  gebot</p></li>
-                                    <li class = "hsl compare" value = "0.24"><p></p><p>din heiliger vville vnt din gebot</p></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class = "vers">
-                                <ul>
-                                    <li class = "referenz"><p></p><p>dein helig͛ wille vn̄ dein gebot</p></li>
-                                    <li class = "hsa compare" value = "0.9"><p></p><p>din haliger wille vn̄ din gebot</p></li>
-                                    <li class = "hsc compare" value = "0.19"><p></p><p>din hailig wille vn̄ din  gebot</p></li>
-                                    <li class = "hsl compare" value = "0.24"><p></p><p>din heiliger vville vnt din gebot</p></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class = "vers">
-                                <ul>
-                                    <li class = "referenz"><p></p><p>mvzze an vns aller ergen</p></li>
-                                    <li class = "hsa compare" value = "0.21"><p></p><p>mvͤzze an vnſ alſo ergen</p></li>
-                                    <li class = "hsc compare" value = "0.44"><p></p><p>Muͤſſe an uͥnſ alſo ergan</p></li>
-                                    <li class = "hsl compare" value = "0.25"><p></p><p>mvͤze an vns ſo er gen</p></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class = "vers">
-                                <ul>
-                                    <li class = "referenz"><p></p><p>daz wir froͤlichen erſten</p></li>
-                                    <li class = "hsa compare" value = "0.08"><p></p><p>daz wir froͤlich erſten</p></li>
-                                    <li class = "hsc compare" value = "0.24"><p></p><p>Dc wir vroͤlich erſtan</p></li>
-                                    <li class = "hsl compare" value = "0.12"><p></p><p>daz vvir vroͤlichen erſten</p></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                <details class = "vers" >
+                    <summary class = "referenz">Gnædich vnde gewaltich got</summary>
+                    <ul>
+                        <li class = "hsa compare" value  = "0.31"><p></p><p>Gænedik vn̄ gewaltik got</p></li>
+                        <li class = "hsc compare" value  = "0.35"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
+                        <li class = "hsl compare" value  = "0.8"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
+                    </ul>
+                </details>
+                <details class = "vers">
+                    <summary class = "referenz">dein helig͛ wille vn̄ dein gebot</summary>
+                    <ul>
+                        <li class = "hsa compare" value = "0.9"><p></p><p>din haliger wille vn̄ din gebot</p></li>
+                        <li class = "hsc compare" value = "0.19"><p></p><p>din hailig wille vn̄ din  gebot</p></li>
+                        <li class = "hsl compare" value = "0.24"><p></p><p>din heiliger vville vnt din gebot</p></li>
+                    </ul>
+                </details>
+                <details class = "vers">
+                    <summary class = "referenz">mvzze an vns aller ergen</summary>
+                    <ul>
+                        <li class = "hsa compare" value = "0.21"><p></p><p>mvͤzze an vnſ alſo ergen</p></li>
+                        <li class = "hsc compare" value = "0.44"><p></p><p>Muͤſſe an uͥnſ alſo ergan</p></li>
+                        <li class = "hsl compare" value = "0.25"><p></p><p>mvͤze an vns ſo er gen</p></li>
+                    </ul>
+                </details>
+                <details class = "vers">
+                    <summary class = "referenz">daz wir froͤlichen erſten</summary>
+                    <ul>
+                        <li class = "hsa compare" value = "0.08"><p></p><p>daz wir froͤlich erſten</p></li>
+                        <li class = "hsc compare" value = "0.24"><p></p><p>Dc wir vroͤlich erſtan</p></li>
+                        <li class = "hsl compare" value = "0.12"><p></p><p>daz vvir vroͤlichen erſten</p></li>
+                    </ul>
+                </details>
                 </div>
             </div>
             <!-- col 2 -->

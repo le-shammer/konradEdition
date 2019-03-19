@@ -1,3 +1,5 @@
+
+//Erstes Element in Liste gibt Levenshtein-Grenzwert an; zweiter Wert kann für "Toggle" Option genutzt werden
 var activeCats = {
     1 : [0, true],
     2 : [0.05, true],
@@ -6,43 +8,37 @@ var activeCats = {
     '4b' : [0.8, true],
     '4c' : [0.9, true],
     5 : ['zusatz', true],
-    6 : ['alle', false]
+    6 : [1, false]
 };
 
 window.onload = function() {
     console.log('Dokument geladen');
+    //hideOnLoad();
 };
 
-function showCat1(inp){
-    var th = activeCats[inp][0];
-   console.log(th);
-   cat1 = document.querySelectorAll("li");
-   isHidden = activeCats[inp][1];
-   var newVisibility = getNewVisibility(isHidden);
-   cat1.forEach(element => {
-       if(element.getAttribute('value') != null && element.getAttribute('value') >= th){
-           element.style.visibility = newVisibility;
-       }
-   });
-    activeCats[inp][1] = !activeCats[inp][1];
+function hideOnLoad(){
+    showCat(6);
 }
 
-function showCat2(inp){
+function showCat(inp){
     console.log(inp);
     var th = activeCats[inp][0];
    console.log(th);
    cat1 = document.querySelectorAll("li");
    cat1.forEach(element => {
        if(element.getAttribute('value') != null){
-        element.style.visibility = 'hidden';
+           element.classList.add('comparehidden');
         if(element.getAttribute('value') >= th){
-            element.style.visibility = '';
+            element.classList.remove('comparehidden');
         }
     }
    });
     activeCats[inp][1] = !activeCats[inp][1];
 }
 
+function toggleAdditionVerses(element){
+    element.classList.toggle("toggle");
+}
 
 function showAll(){
     isHidden = activeCats[6][0];
