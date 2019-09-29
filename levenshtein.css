@@ -16,43 +16,17 @@ ul {
   height: 0;
 }
 
-.info{
-  text-align: left;
-  font-size: x-small;
+.tippy-content a{
+  color: #8ABC8C;
+}
+.tippy-content a:visited {
+  color: #367C39;
+}
+/* 
+summary::-moz-list-bullet {
+  list-style-type: none;
 }
 
-/** Pulse animation **/
-.pulse {
-  cursor: pointer;
-  box-shadow: 0 0 0 rgb(138, 188, 140);
-  animation: pulse 2s infinite;
-}
-.pulse:hover {
-  animation: none;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgb(138, 188, 140);
-  }
-  70% {
-      -webkit-box-shadow: 0 0 0 10px rgb(138, 188, 140);
-  }
-  100% {
-      -webkit-box-shadow: 0 0 0 0 rgb(138, 188, 140);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgb(138, 188, 140);
-    box-shadow: 0 0 0 0 rgb(138, 188, 140);
-  }
-  70% {
-      -moz-box-shadow: 0 0 0 10px rgba(138, 188, 140, 0.7);
-      box-shadow: 0 0 0 10px rgba(138, 188, 140, 0.7);
-  }
-  100% {
-      -moz-box-shadow: 0 0 0 0 rgb(138, 188, 140, 0.4);
-      box-shadow: 0 0 0 0 rgb(138, 188, 140, 0.4);
-  }
-}
+summary::-webkit-details-marker {
+  display: none;
+} */

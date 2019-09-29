@@ -17,14 +17,25 @@ window.onload = function() {
 };
 
 function addToolTip(){
-    const reference = document.querySelector('.infobox');
-    new Tooltip(reference, {
-        placement: 'bottom', // or bottom, left, right, and variations
-        title: "Wie funktionieren die Distanzen?"
-    }); 
-
-
+    tippy('.infobox', {
+        content: "Für how-to klicken!",
+        placement: "top",
+        animation: "animate.css: tada",
+        multiple: true
+    });
+    
+    tippy('.infobox', {
+        content: ''.concat("Basierend auf<a href = 'https://de.wikipedia.org/wiki/Levenshtein-Distanz' target='_blank'> Levenshtein Distanzen</a>, ",
+        "werden prozentuale Abweichungen zwischen den Versen angegeben.</br>",
+        "sdfsdfdsf"),
+        placement: "bottom",
+        multiple: true,
+        trigger: 'click',
+        interactive: true
+    });
 }
+ 
+
 
 function resetSelects(){
     selectlist = document.querySelectorAll("select");

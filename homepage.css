@@ -226,7 +226,9 @@ option:hover{
 }
 
 
-
+#lesetext{
+    display: inline-block;
+}
 
 
 
