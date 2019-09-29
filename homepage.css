@@ -141,11 +141,24 @@ tr {
 select{
     /* irrelevante Eigenschaften gekürzt */
     position: sticky;
-    border:1px solid black;
     padding:.75em 1em .5em 1em;
-    background-color:#f1f1f1;
-    color:black;
-    margin-left: 15%;
+    margin-left: 1em;
+    border: none;
+    background: white;
+    padding-bottom: -3px;
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-image: 
+    linear-gradient(
+        to left, 
+        black, 
+        rgba(0, 0, 0, 0)
+      ) 1;
+}
+
+.infobox{
+    color: #367C39;
+    font-size: xx-large;
 }
 
 option{
@@ -154,7 +167,7 @@ option{
 }
 
 option:hover{
-    background-color:#8ABC8C;
+    background-color:rgb(138, 188, 140);
     color:white;
 }
 
@@ -213,7 +226,9 @@ option:hover{
 }
 
 
-
+#lesetext{
+    display: inline-block;
+}
 
 
 

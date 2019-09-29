@@ -16,7 +16,17 @@ ul {
   height: 0;
 }
 
-.info{
-  text-align: left;
-  font-size: x-small;
+.tippy-content a{
+  color: #8ABC8C;
 }
+.tippy-content a:visited {
+  color: #367C39;
+}
+/* 
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+} */

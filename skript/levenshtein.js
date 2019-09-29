@@ -1,4 +1,3 @@
-
 //Erstes Element in Liste gibt Levenshtein-Grenzwert an; zweiter Wert kann für "Toggle" Option genutzt werden
 var activeCats = {
     1 : [0, true],
@@ -13,8 +12,37 @@ var activeCats = {
 
 window.onload = function() {
     console.log('Dokument geladen');
-    //hideOnLoad();
+    resetSelects();
+    addToolTip();
 };
+
+function addToolTip(){
+    tippy('.infobox', {
+        content: "Für how-to klicken!",
+        placement: "top",
+        animation: "animate.css: tada",
+        multiple: true
+    });
+    
+    tippy('.infobox', {
+        content: ''.concat("Basierend auf<a href = 'https://de.wikipedia.org/wiki/Levenshtein-Distanz' target='_blank'> Levenshtein Distanzen</a>, ",
+        "werden prozentuale Abweichungen zwischen den Versen angegeben.</br>",
+        "sdfsdfdsf"),
+        placement: "bottom",
+        multiple: true,
+        trigger: 'click',
+        interactive: true
+    });
+}
+ 
+
+
+function resetSelects(){
+    selectlist = document.querySelectorAll("select");
+    selectlist.forEach(element => {
+        element.selectedIndex = "0";
+    });
+}
 
 function hideOnLoad(){
     showCat(6);
@@ -35,11 +63,6 @@ function showCat(inp){
    });
     activeCats[inp][1] = !activeCats[inp][1];
 }
-
-function toggleAdditionVerses(element){
-    element.classList.toggle("toggle");
-}
-
 function showAll(){
     isHidden = activeCats[6][0];
     for(category in activeCats){
@@ -64,3 +87,7 @@ function hideElements(liArray, newVisibility){
         element.style.visibility = newVisibility;
     })
 }
+
+
+
+

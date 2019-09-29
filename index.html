@@ -3,10 +3,13 @@
     <head>
         <title>Kindheit Jesu</title>
         <meta charset="utf-8" />
+        <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@4"></script>
         <link href="homepage.css" rel="stylesheet" />
         <link href="levenshtein.css" rel="stylesheet" />
         <script src="skript/jquery-3.3.1.min.js"></script>
-<!--        <script src="jquery.elevatezoom.js"></script>-->
+        <script src="skript/popper.min.js"></script>
+        <script src="skript/tooltip.min.js"></script>
         <script src="skript/homepage.js"></script>
         <script src="skript/levenshtein.js"></script>
 
@@ -16,7 +19,7 @@
         <div class="container">
             <div id="navbar">
                 <ul id="navbarelements">
-                    <li><a href="#" href="#home">Home</a></li>
+                    <li><a href="#" href="#home">Home;</a></li>
                     <li><a href="#" class="active" href="#news">*Text</a></li>
                     <li><a href="#" href="#contact">Hilfe</a></li>
                     <li><a href="#" href="#about">Editionsgrundlagen</a></li>
@@ -75,26 +78,30 @@
             </div> -->
             <!-- Überschrift -->
             <div id="headline">
-                <h1 id="header">Bitte links Kapitel wählen</h1>
+                <h1 id="header">Bitte links Kapitel wählen </h1>
             </div>
             <!-- col 1 -->
             <p/>
             <div class="containter left col" id="col1">
-                <select onchange="showCat(this.value)">
-                    <optgroup label="Abweichungsgrad">
-                        <option value="5">Zusatzverse</option>
-                        <option value="1">Kategorie 1</option>
-                        <option value="2">Kategorie 2</option>
-                        <option value="3">Kategorie 3</option>
-                        <optgroup label="Kategorie 4">
-                            <option value="4a">Kategorie 4a</option>
-                            <option value="4b">Kategorie 4b</option>
-                            <option value="4c">Kategorie 4c</option>
+                <div>
+                    <select id = "categorychooser" onchange="showCat(this.value)" class="select">
+                        <option class="choose" value="leer">Bitte Abweichungsgrad angeben!</option>
+                        <optgroup label="Abweichungsgrad">
+                            <option value="5">Zusatzverse</option>
+                            <option value="1">Kategorie 1</option>
+                            <option value="2">Kategorie 2</option>
+                            <option value="3">Kategorie 3</option>
+                            <optgroup label="Kategorie 4">
+                                <option value="4a">Kategorie 4a</option>
+                                <option value="4b">Kategorie 4b</option>
+                                <option value="4c">Kategorie 4c</option>
+                            </optgroup>
+                            
                         </optgroup>
-                        
-                    </optgroup>
-                </select>
-                <p>Bitte Abweichungsgrad angeben!</p>
+                    </select>
+                <small class = "infobox">&#x24D8;</small>
+            </div>
+                <p></p>
                 <div id = "table">
                 <details class = "vers" >
                     <summary class = "referenz">Gnædich vnde gewaltich got</summary>
@@ -128,12 +135,14 @@
                         <li class = "hsl compare" value = "0.12"><p></p><p>daz vvir vroͤlichen erſten</p></li>
                     </ul>
                 </details>
+                <div><i class="fa fa-question-circle" style="font-size:48px;color:red"></i>
+                </div>
                 </div>
             </div>
             <!-- col 2 -->
             <div class="containter left col" id="col2">
                 <div class="placeholder">
-                    <select id="c2">
+                    <select id="c2" class="select">
                         <option class="choose" value="leer">Bitte wählen</option>
                         <optgroup label="Handschrift B">
                             <option value="bf">*Faksimile HS B</option>
@@ -159,7 +168,7 @@
             <!-- col 3 -->
             <div class="containter left col" id="col3">
                 <div class="placeholder">
-                    <select id="c3">
+                    <select id="c3" class="select">
                         <option class="choose" value="leer">Bitte wählen</option>
                         <optgroup label="Handschrift B">
                             <option value="bf">*Faksimile HS B</option>
@@ -184,7 +193,7 @@
             <!-- col 4 -->
             <div class="containter left col" id="col4">
                 <div class="placeholder">
-                    <select id="c4">
+                    <select id="c4" class="select">
                         <option class="choose" value="leer">Bitte wählen</option>
                         <optgroup label="Handschrift B">
                             <option value="bf">*Faksimile HS B</option>
