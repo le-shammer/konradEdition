@@ -1,4 +1,5 @@
 //Erstes Element in Liste gibt Levenshtein-Grenzwert an; zweiter Wert kann für "Toggle" Option genutzt werden
+/*
 var activeCats = {
     1 : [0, true],
     2 : [0.05, true],
@@ -9,7 +10,15 @@ var activeCats = {
     5 : ['zusatz', true],
     6 : [1, false]
 };
-
+*/
+var activeCats = {
+    1 : [0, true],
+    2 : [1, true],
+    3 : [2, true],
+    4 : [3, true],
+    5 : [4, true],
+    6 : [5, true],
+};
 window.onload = function() {
     console.log('Dokument geladen');
     resetSelects();
