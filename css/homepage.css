@@ -1,0 +1,138 @@
+body{
+    font-family:sans-serif;
+    text-align:justify;
+}
+
+
+
+/*Navigation links */
+#sidebar{
+    font-size:small;
+    font-weight:normal;
+    text-align:left;
+    width:13%;
+   /* background-color:#f1f1f1;*/
+    float:left;
+    position: relative;
+    margin: 0 0 300px -10px;
+    padding: 85px 0px;
+    height: 100%;
+}
+
+#sidebar ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.sidebarlist li a{
+    display:block;
+    color:#000;
+    padding:5px;
+    text-decoration:none;
+}
+.chapter{
+
+    border-bottom:1px solid #8ABC8C;
+}
+.sidebarlist li a.active:not(.zusatzteil){
+    background-color:#8ABC8C;
+    color:white;
+}
+
+.chapter:hover{
+    background-color:#6b6b6b;
+    color:white;
+}
+
+.chapterbrand{
+    font-size:2vmin;
+    background-color:#6b6b6b;
+    font-weight:bold;
+    padding:5px 5px 5px 15px;
+    font-size:larger;
+}
+
+
+.chapterbrand.active{
+    background-color:#367C39;
+    color:white;
+}
+
+
+.zusatzteil{
+    background-color:#6b6b6b;
+}
+
+.zusatzteil.active{
+    background-color:#367C39;
+}
+
+.zteil{
+    margin-left:25px;
+}
+
+/*Headline*/
+#headline{
+    text-align:center;
+    padding-bottom:10px;
+}
+
+/*Content*/
+
+.left{
+    width: 20.55%;
+    height:80%;
+    float:left;
+    z-index:-1;
+
+}
+.newtable{
+    width: 80%;
+    height:80%;
+    float:left;
+    z-index:-1;
+    display:table;
+
+}
+.zeile{
+    display: table;
+    border: 1px solid blue;
+}
+
+
+.vers{
+    min-height: 3em;
+}
+select{
+    /* irrelevante Eigenschaften gekürzt */
+    position: sticky;
+    padding:.75em 1em .5em 1em;
+    margin-left: 1em;
+    border: none;
+    background: white;
+    padding-bottom: -3px;
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-image: 
+    linear-gradient(
+        to left, 
+        black, 
+        rgba(0, 0, 0, 0)
+      ) 1;
+}
+
+.infobox{
+    color: #367C39;
+    font-size: xx-large;
+}
+
+option{
+    background:#f1f1f1;
+    color:black;
+}
+
+option:hover{
+    background-color:rgb(138, 188, 140);
+    color:white;
+}   

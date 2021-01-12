@@ -120,6 +120,18 @@ body{
     z-index:-1;
 
 }
+.newtable{
+    width: 80%;
+    height:80%;
+    float:left;
+    z-index:-1;
+    display:table;
+
+}
+.zeile{
+    display: table;
+    border: 1px solid blue;
+}
 
 .sv{
     color: red;
@@ -135,6 +147,8 @@ tr {
 }
 .vers:nth-child(even) {background: white}
 .vers:nth-child(odd) {background: #f1f1f1}
+.contents:nth-child(even) {background: white}
+.contents:nth-child(odd) {background: black}
 .vers{
     min-height: 3em;
 }
