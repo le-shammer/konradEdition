@@ -1,35 +1,4 @@
-ul {
-    list-style-type: none;
-  }
-.compare{
-  height: 2em;
-  padding: 2.5px 25px;
-}
-.comparehidden{
-  visibility: hidden;
-  height: 0;
-}
 
 .hidden{
   display: none;
 }
-
-.toggle .compare{
-  visibility: hidden;
-  height: 0;
-}
-
-.tippy-content a{
-  color: #8ABC8C;
-}
-.tippy-content a:visited {
-  color: #367C39;
-}
-/* 
-summary::-moz-list-bullet {
-  list-style-type: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-} */

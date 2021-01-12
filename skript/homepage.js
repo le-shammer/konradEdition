@@ -21,6 +21,7 @@ activateMainText = function(val){
 
 var changeColumn = function(){
     $(".select").on('change', function(){
+        //console.log(this.id + this.value);
         $("." + this.id).children(".content").addClass("hidden");
         $("." + this.id).children("." +  this.value).removeClass("hidden");
     });

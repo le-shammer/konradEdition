@@ -35,14 +35,10 @@ body{
 
     border-bottom:1px solid #8ABC8C;
 }
-.sidebarlist li a.active:not(.zusatzteil){
-    background-color:#8ABC8C;
-    color:white;
-}
 
 .chapter:hover{
-    background-color:#6b6b6b;
-    color:white;
+    background-color:#66666613;
+    color:black;
 }
 
 .chapterbrand{
@@ -51,25 +47,6 @@ body{
     font-weight:bold;
     padding:5px 5px 5px 15px;
     font-size:larger;
-}
-
-
-.chapterbrand.active{
-    background-color:#367C39;
-    color:white;
-}
-
-
-.zusatzteil{
-    background-color:#6b6b6b;
-}
-
-.zusatzteil.active{
-    background-color:#367C39;
-}
-
-.zteil{
-    margin-left:25px;
 }
 
 /*Headline*/
@@ -87,7 +64,7 @@ body{
     z-index:-1;
 
 }
-.newtable{
+.table-row{
     width: 80%;
     height:80%;
     float:left;
@@ -95,8 +72,8 @@ body{
     display:table;
 
 }
-.zeile{
-    display: table;
+.zelle{
+    display: table-cell;
     border: 1px solid blue;
 }
 
