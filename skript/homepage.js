@@ -3,6 +3,10 @@ var main = function () {
     choseMainText();
     activateMainText(mainText);
     changeColumn();
+    changeCertainColum('col2', 'wer');
+    changeCertainColum('col3', 'das');
+    changeCertainColum('col4', 'liestistdoof');
+
     //checkpw();
 
 }
@@ -22,11 +26,16 @@ activateMainText = function(val){
 var changeColumn = function(){
     $(".select").on('change', function(){
         //console.log(this.id + this.value);
-        $("." + this.id).children(".content").addClass("hidden");
-        $("." + this.id).children("." +  this.value).removeClass("hidden");
+        col = this.id;
+        val = this.value;
+        changeCertainColum(col, val);
     });
 }
+var changeCertainColum = function(col, val){
+    $("." + col).children(".content").addClass("hidden");
+    $("." + col).children("." +  val).removeClass("hidden");
 
+}
 //check pw
 var checkpw = function () {
     var password = prompt("Bitte Passwort eingeben", "");
