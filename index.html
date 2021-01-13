@@ -1,89 +1,42 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Kindheit Jesu</title>
         <meta charset="utf-8" />
-        <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-        <script src="https://unpkg.com/tippy.js@4"></script>
-        <link href="homepage.css" rel="stylesheet" />
-        <link href="levenshtein.css" rel="stylesheet" />
-        <script src="skript/jquery-3.3.1.min.js"></script>
-        <script src="skript/popper.min.js"></script>
-        <script src="skript/tooltip.min.js"></script>
+        <link href="css/homepage.css" rel="stylesheet" />
+        <link href="css/levenshtein.css" rel="stylesheet" />
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.js"
+            integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+            crossorigin="anonymous"></script>
         <script src="skript/homepage.js"></script>
         <script src="skript/levenshtein.js"></script>
 
     </head>
     <body>
-        <!-- Navbar -->
-        <div class="container">
-            <div id="navbar">
-                <ul id="navbarelements">
-                    <li><a href="#" href="#home">Home;</a></li>
-                    <li><a href="#" class="active" href="#news">*Text</a></li>
-                    <li><a href="#" href="#contact">Hilfe</a></li>
-                    <li><a href="#" href="#about">Editionsgrundlagen</a></li>
-                    <li><a href="#" href="#about">Handschriftenbeschreibung</a></li>
-                    <li><a href="#" href="#about">Suchfunktion</a></li>
-                    <li><a href="https://www.uni-wuerzburg.de/sonstiges/impressum/" href="#about">Impressum</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- Sidebar -->
         <div id="sidebar">
             <ul class="sidebarlist">
-				<li id="teil1" class="chapterbrand"><a href="#">*Teil 1:</a></li>
-					<li><a href="#" id="1" class="chapter gotcont">Kapitel 1: Prolog</a></li>
-					<li><a href="#" id="2" class="chapter gotcont">Kapitel 2: Paraphrase der Mariendichtung Heinrichs</a></li>
-					<li><a href="#" id="3" class="chapter gotcont">Kapitel 3: Pseudo-Matthäus 8.4</a></li>
-					<li><a href="#" id="4" class="chapter gotcont">Kapitel 4: Pseudo-Matthäus 9</a></li>
-					<li><a href="#" id="5" class="chapter gotcont">Kapitel 5: Lukas 1,39-56</a></li>
-					<li><a href="#" id="6" class="chapter gotcont">Kapitel 6: Pseudo-Matthäus10</a></li>
-					<li><a href="#" id="7" class="chapter gotcont">Kapitel 7: Pseudo-Matthäus11</a></li>
-					<li><a href="#" id="8" class="chapter gotcont">Kapitel 8: Pseudo-Matthäus12</a></li>
-					<li><a href="#" id="9" class="chapter gotcont">Kapitel 9: Pseudo-Matthäus13</a></li>
-					<li><a href="#" id="10" class="chapter gotcont">Kapitel 10: Pseudo-Matthäus 14</a></li>
-					<li><a href="#" id="11" class="chapter gotcont">Kapitel 11: Pseudo-Matthäus 15</a></li>
-					<li><a href="#" id="12" class="chapter gotcont">Kapitel 12: Pseudo-Matthäus 16</a></li>
-					<li><a href="#" id="13" class="chapter gotcont">Kapitel 13: Pseudo-Matthäus 17</a></li>
-					<li><a href="#" id="14" class="chapter gotcont">Kapitel 14: Pseudo-Matthäus 18</a></li>
-					<li><a href="#" id="15" class="chapter gotcont">Kapitel 15: Pseudo-Matthäus 19</a></li>
-					<li><a href="#" id="16" class="chapter gotcont">Kapitel 16: Pseudo-Matthäus 20</a></li>
-					<li><a href="#" id="17" class="chapter gotcont">Kapitel 17: Pseudo-Matthäus 21</a></li>
-					<li><a href="#" id="18" class="chapter gotcont">Kapitel 18: Erste Räuberepisode</a></li>
-					<li><a href="#" id="19" class="chapter gotcont">Kapitel 19: Pseudo-Matthäus 22</a></li>
-					<li><a href="#" id="20" class="chapter gotcont">Kapitel 20: Pseudo-Matthäus 23</a></li>
-					<li><a href="#" id="21" class="chapter gotcont">Kapitel 21: Pseudo-Matthäus 24</a></li>
-					<li><a href="#" id="22" class="chapter gotcont">Kapitel 22: Zweite Räuberepisode	</a></li>
-					<li><a href="#" id="23" class="chapter gotcont">Kapitel 23: Joseph der Zimmermann</a></li>
-					<li><a href="#" id="24" class="chapter gotcont">Kapitel 24: Holzlängungswunder</a></li>
-					<li><a href="#" id="25" class="chapter gotcont">Kapitel 25: Der zerbrochene Krug</a></li>
-					<li><a href="#" id="26" class="chapter gotcont">Kapitel 26: Der zweite Joseph</a></li>
-					<li><a href="#" id="27" class="chapter gotcont">Kapitel 27: Tod eines Kindes</a></li>
-					<li><a href="#" id="28" class="chapter gotcont">Kapitel 28: Erste Spielepisode: Fischfang</a></li>
-					<li><a href="#" id="29" class="chapter gotcont">Kapitel 29: Jesus und die Löwen</a></li>
-					<li><a href="#" id="30" class="chapter gotcont">Kapitel 30: Zweite Spielepisode: Tonvögel</a></li>
-					<li><a href="#" id="31" class="chapter gotcont">Kapitel 31: Jesus in der Schule</a></li>
-					<li><a href="#32" id="32" class="chapter gotcont">Kapitel 32: Epilog</a></li> 
-					<li><a href="#33" id="33" class="chapter gotcont">Volltext</a></li> 
+				<li id="teil1" class="chapterbrand">    Anzeigemodus</li>
+                <li><a href="#" id="1" class="chapter gotcont">Lev diss</a></li>
+                <li><a href="#" id="2" class="chapter gotcont">WMD Dists</a></li> 
+                <li><a href="#" id="2" class="chapter gotcont">Synoptisch Dists</a></li> 
+                <li><a href="#" id="2" class="chapter gotcont">WMD Dists</a></li> 
+                <li>Ausgewählter Lesetext:
+                    <select id="lesetext">
+                    <option value="hsb">HS B</option>
+                    <option value="hsa">HS A</option>
+                    <option value="hsc">HS C</option>
+                    <option value="hsl">HS L</option>
+                </select></li>
+            </ul>
         </div>
-        <!-- Inhalte -->
-        <div class="content">
-            <!-- Versegraph -->
-            <!-- <div class="container" id="versegraph">
-                <div>
-                    <p>Handschriftliche<br />Überlieferung</p>
-                </div>
-                <div id="graph"></div>
-            </div> -->
-            <!-- Überschrift -->
-            <div id="headline">
-                <h1 id="header">Bitte links Kapitel wählen </h1>
-            </div>
-            <!-- col 1 -->
-            <p/>
-            <div class="containter left col" id="col1">
-                <div>
+        <div id="headline">
+            <h1 id="header">Links Anzeigempdus und Lesetext wählen</h1>
+        </div>
+        <div class=" table-row">
+            <div class = "left zelle col1">
+                <p>
                     <select id = "categorychooser" onchange="showCat(this.value)" class="select">
                         <option class="choose" value="leer">Bitte Abweichungsgrad angeben!</option>
                         <optgroup label="Abweichungsgrad">
@@ -99,151 +52,180 @@
                             
                         </optgroup>
                     </select>
-                <small class = "infobox">&#x24D8;</small>
+                </p>
             </div>
-                <p></p>
-                <div id = "table">
-                <details class = "vers" >
-                    <summary class = "referenz">Gnædich vnde gewaltich got</summary>
-                    <ul>
-                        <li class = "hsa compare" value  = "0.31"><p></p><p>Gænedik vn̄ gewaltik got</p></li>
-                        <li class = "hsc compare" value  = "0.35"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
-                        <li class = "hsl compare" value  = "0.8"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
-                    </ul>
-                </details>
-                <details class = "vers">
-                    <summary class = "referenz">dein helig͛ wille vn̄ dein gebot</summary>
-                    <ul>
-                        <li class = "hsa compare" value = "0.9"><p></p><p>din haliger wille vn̄ din gebot</p></li>
-                        <li class = "hsc compare" value = "0.19"><p></p><p>din hailig wille vn̄ din  gebot</p></li>
-                        <li class = "hsl compare" value = "0.24"><p></p><p>din heiliger vville vnt din gebot</p></li>
-                    </ul>
-                </details>
-                <details class = "vers">
-                    <summary class = "referenz">mvzze an vns aller ergen</summary>
-                    <ul>
-                        <li class = "hsa compare" value = "0.21"><p></p><p>mvͤzze an vnſ alſo ergen</p></li>
-                        <li class = "hsc compare" value = "0.44"><p></p><p>Muͤſſe an uͥnſ alſo ergan</p></li>
-                        <li class = "hsl compare" value = "0.25"><p></p><p>mvͤze an vns ſo er gen</p></li>
-                    </ul>
-                </details>
-                <details class = "vers">
-                    <summary class = "referenz">daz wir froͤlichen erſten</summary>
-                    <ul>
-                        <li class = "hsa compare" value = "0.08"><p></p><p>daz wir froͤlich erſten</p></li>
-                        <li class = "hsc compare" value = "0.24"><p></p><p>Dc wir vroͤlich erſtan</p></li>
-                        <li class = "hsl compare" value = "0.12"><p></p><p>daz vvir vroͤlichen erſten</p></li>
-                    </ul>
-                </details>
-                <div><i class="fa fa-question-circle" style="font-size:48px;color:red"></i>
-                </div>
-                </div>
+            <div class = "left zelle col2">
+                <p><select id="col2" class="select">
+                    <option class="choose" value="leer">Bitte wählen</option>
+                    <optgroup label="Handschrift B">
+                        <option value="bf">*Faksimile HS B</option>
+                        <option value="bt">*Transkripton HS B</option>
+                    </optgroup>
+                    <optgroup label="Handschrift A">
+                        <option value="af">*Faksimile HS A</option>
+                        <option value="at">*Transkripton HS A</option>
+                    </optgroup>
+                    <optgroup label="Handschrift C">
+                        <option value="cf">*Faksimile HS C</option>
+                        <option value="ct">*Transkripton HS C</option>
+                    </optgroup>
+                    <optgroup label="Handschrift L">
+                        <option value="lf">*Faksimile HS L</option>
+                        <option value="lt">*Transkripton HS L</option>
+                    </optgroup>
+                </select></p>
             </div>
-            <!-- col 2 -->
-            <div class="containter left col" id="col2">
-                <div class="placeholder">
-                    <select id="c2" class="select">
-                        <option class="choose" value="leer">Bitte wählen</option>
-                        <optgroup label="Handschrift B">
-                            <option value="bf">*Faksimile HS B</option>
-                            <option value="bt">*Transkripton HS B</option>
-                        </optgroup>
-                        <optgroup label="Handschrift A">
-                            <option value="af">*Faksimile HS A</option>
-                            <option value="at">*Transkripton HS A</option>
-                        </optgroup>
-                        <optgroup label="Handschrift C">
-                            <option value="cf">*Faksimile HS C</option>
-                            <option value="ct">*Transkripton HS C</option>
-                        </optgroup>
-                        <optgroup label="Handschrift L">
-                            <option value="lf">*Faksimile HS L</option>
-                            <option value="lt">*Transkripton HS L</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="fill"></div>
+            <div class = "left zelle col3">
+                <p><select id="col3" class="select">
+                    <option class="choose" value="leer">Bitte wählen</option>
+                    <optgroup label="Handschrift B">
+                        <option value="bf">*Faksimile HS B</option>
+                        <option value="bt">*Transkripton HS B</option>
+                    </optgroup>
+                    <optgroup label="Handschrift A">
+                        <option value="af">*Faksimile HS A</option>
+                        <option value="at">*Transkripton HS A</option>
+                    </optgroup>
+                    <optgroup label="Handschrift C">
+                        <option value="cf">*Faksimile HS C</option>
+                        <option value="ct">*Transkripton HS C</option>
+                    </optgroup>
+                    <optgroup label="Handschrift L">
+                        <option value="lf">*Faksimile HS L</option>
+                        <option value="lt">*Transkripton HS L</option>
+                    </optgroup>
+                </select></p>
             </div>
-            <p class="clear"/>
-            <!-- col 3 -->
-            <div class="containter left col" id="col3">
-                <div class="placeholder">
-                    <select id="c3" class="select">
-                        <option class="choose" value="leer">Bitte wählen</option>
-                        <optgroup label="Handschrift B">
-                            <option value="bf">*Faksimile HS B</option>
-                            <option value="bt">*Transkripton HS B</option>
-                        </optgroup>
-                        <optgroup label="Handschrift A">
-                            <option value="af">*Faksimile HS A</option>
-                            <option value="at">*Transkripton HS A</option>
-                        </optgroup>
-                        <optgroup label="Handschrift C">
-                            <option value="cf">*Faksimile HS C</option>
-                            <option value="ct">*Transkripton HS C</option>
-                        </optgroup>
-                        <optgroup label="Handschrift L">
-                            <option value="lf">*Faksimile HS L</option>
-                            <option value="lt">*Transkripton HS L</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="fill"></div>
-            </div>
-            <!-- col 4 -->
-            <div class="containter left col" id="col4">
-                <div class="placeholder">
-                    <select id="c4" class="select">
-                        <option class="choose" value="leer">Bitte wählen</option>
-                        <optgroup label="Handschrift B">
-                            <option value="bf">*Faksimile HS B</option>
-                            <option value="bt">*Transkripton HS B</option>
-                        </optgroup>
-                        <optgroup label="Handschrift A">
-                            <option value="af">*Faksimile HS A</option>
-                            <option value="at">*Transkripton HS A</option>
-                        </optgroup>
-                        <optgroup label="Handschrift C">
-                            <option value="cf">*Faksimile HS C</option>
-                            <option value="ct">*Transkripton HS C</option>
-                        </optgroup>
-                        <optgroup label="Handschrift L">
-                            <option value="lf">*Faksimile HS L</option>
-                            <option value="lt">*Transkripton HS L</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="fill"></div>
+            <div class = "left zelle" id = "col4">
+                <p><select id="col4" class="select">
+                    <option class="choose" value="leer">Bitte wählen</option>
+                    <optgroup label="Handschrift B">
+                        <option value="bf">*Faksimile HS B</option>
+                        <option value="bt">*Transkripton HS B</option>
+                    </optgroup>
+                    <optgroup label="Handschrift A">
+                        <option value="af">*Faksimile HS A</option>
+                        <option value="at">*Transkripton HS A</option>
+                    </optgroup>
+                    <optgroup label="Handschrift C">
+                        <option value="cf">*Faksimile HS C</option>
+                        <option value="ct">*Transkripton HS C</option>
+                    </optgroup>
+                    <optgroup label="Handschrift L">
+                        <option value="lf">*Faksimile HS L</option>
+                        <option value="lt">*Transkripton HS L</option>
+                    </optgroup>
+                </select></p>
             </div>
         </div>
-        <!-- Footer -->
-        <div class="clear"></div>
-        <!-- footer1 -->
-        <!-- <footer id="foot">
-            <div id="footer1" class="footer">
-                <table>
-                    <tr>
-                        <td >
-                            <p>
-                                <a id="nextchapter" href="#">Nächstes Kapitel</a>
-                            </p>
-                            <p>
-                                <a id="lastchapter" href="#">Vorheriges Kapitel</a>
-                            </p>
-                        </td>
-                        <td>
-                            <select id="f">
-                                <option class="choose" value="leer">Bitte wählen</option>
-                                <option value="f1">Kommentar Texterstellung</option>
-                                <option value="f2">Kommentar Übersetzung</option>
-                                <option value="f3">Stellenkommentar</option>
-                                <option value="f4">Quellen und Nachleben</option>
-                            </select>
-                        </td>
-                        <td class="fill"> </td>
-                    </tr>
-                </table>
+        <div class=" table-row">
+            <div class = "left zelle col1">
+                <p>
+                    <details class = "vers" >
+                        <summary class = "referenz">Gnædich vnde gewaltich got</summary>
+                        <ul>
+                            <li class = "hsa compare" value  = "0.31"><p></p><p>Gænedik vn̄ gewaltik got</p></li>
+                            <li class = "hsc compare" value  = "0.35"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
+                            <li class = "hsl compare" value  = "0.8"><p></p><p>Genaͤdig vn̄ gewaltig got</p></li>
+                        </ul>
+                    </details>
+                </p>
             </div>
-        </footer> -->
+            <div class = "left zelle col2">
+                <p class="content hsb bt">b tran</p>
+                <p class="content hsb bk">b komm</p>
+                <p class="content hsc ct">c tran</p>
+                <p class="content hsa ak">a komm</p>
+            </div>
+            <div class = "left zelle col3">
+                <p>content</p>
+            </div>
+            <div class = "left zelle" id = "col4">
+                <p>content</p>
+             </div>
+        </div>
+        <div class=" table-row">
+            <div class = "left zelle col1">
+                <p class="content hsb bt">b tran</p>
+                <p class="content hsb bk">b komm</p>
+                <p class="content hsc ct">c tran</p>
+                <p class="content hsa ak">a komm</p>
+            </div>
+            <div class = "left zelle col2">
+                <p>content</p>
+            </div>
+            <div class = "left zelle col3">
+                <p>content</p>
+            </div>
+            <div class = "left zelle" id = "col4">
+                <p>content</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="left col zelle col1">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+            <div class="left col zelle col2">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+            <div class="left col zelle col3">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+            <div class="left col zelle col4">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+          </div>
+          
+
+          <div class="table-row">
+            <div class="left col zelle col1">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+            <div class="left col zelle col2">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+            <div class="left col zelle col3">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+            <div class="left col zelle col4">
+              <p class="content hsb bt">gnædich vnde gewaltich got</p>
+              <p class="content hsa at">gænedik vn̄ gewaltik got</p>
+              <p class="content hsc ct">genaͤdig vn̄ gewaltig got</p>
+              <p class="content hsl lt">genædich vnt gewaltech got</p>
+              <p class="content hsb bk">das ist der erste Vers!</p>
+            </div>
+          </div>
+          
+          
+        <div class="clear"/>
+
     </body>
 </html>
