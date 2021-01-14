@@ -13,7 +13,7 @@ body{
     width:13%;
    /* background-color:#f1f1f1;*/
     float:left;
-    position: sticky;
+    position: fixed;
     margin: 0 0 300px -10px;
     padding: 85px 0px;
     height: 1000px;
@@ -32,7 +32,6 @@ body{
     text-decoration:none;
 }
 .chapter{
-
     border-bottom:1px solid #8ABC8C;
 }
 
@@ -40,7 +39,6 @@ body{
     background-color:#66666613;
     color:black;
 }
-
 .chapterbrand{
     font-size:2vmin;
     background-color:#6b6b6b;
@@ -48,11 +46,13 @@ body{
     padding:5px 5px 5px 15px;
     font-size:larger;
 }
-
+#title{
+    background-color: white;
+    position: absolute;
+}
 /*Headline*/
 #headline{
-    text-align:center;
-    padding-bottom:10px;
+    position: absolute;
 }
 
 /*Content*/
@@ -66,18 +66,24 @@ body{
 }
 .table-row{
     width: 80%;
-    height:80%;
     float:left;
-    z-index:-1;
     display:table;
+    margin-left: 15%;
 
+}
+.table-row:nth-of-type(4){
+    padding-top: 10%;
 }
 .zelle{
     display: table-cell;
     border: 1px solid blue;
 }
 
-
+.header{
+    position: fixed;
+    top: -5px;
+    background-color: rgb(255, 235, 205);
+}
 .vers{
     min-height: 3em;
 }
