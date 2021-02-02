@@ -21,6 +21,10 @@ body{
     float:left;
 }
 
+.table-row{
+    height: 500em;
+}
+
 #navbarelements li a{
     display:inline-block;
     color:white;

@@ -24,7 +24,6 @@ body{
     margin:0;
     padding:0;
 }
-
 .sidebarlist li a{
     display:block;
     color:#000;
@@ -50,20 +49,31 @@ body{
     background-color: white;
     position: absolute;
 }
+
 /*Headline*/
 #headline{
     position: absolute;
 }
 
 /*Content*/
-
+.table-row:hover{
+    background-color: #66666613;
+}
 .left{
     width: 20.55%;
     height:80%;
     float:left;
     z-index:-1;
-
+    padding-left: 2em;
 }
+
+details{
+    padding-top: 1em;
+}
+#table-rows:nth-child(even){
+    background-color: gray;
+}
+
 .table-row{
     width: 80%;
     float:left;
@@ -76,7 +86,7 @@ body{
 }
 .zelle{
     display: table-cell;
-    border: 1px solid blue;
+    border-top: 1px solid rgb(182, 180, 255);
 }
 
 .header{
