@@ -57,7 +57,7 @@ body{
 
 /*Content*/
 .table-row:hover{
-    background-color: #66666613;
+    background-color: rgb(250,250,250);
 }
 .left{
     width: 20.55%;
@@ -92,7 +92,11 @@ details{
 .header{
     position: fixed;
     top: -5px;
-    background-color: rgb(255, 235, 205);
+    height: 15%;
+    background-color: white;
+}
+.header *{
+    padding-top: 5%;
 }
 .vers{
     min-height: 3em;
