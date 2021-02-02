@@ -118,7 +118,9 @@ select{
         rgba(0, 0, 0, 0)
       ) 1;
 }
-
+img{
+    width: 20em;
+}
 .infobox{
     color: #367C39;
     font-size: xx-large;
