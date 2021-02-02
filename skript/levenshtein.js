@@ -26,8 +26,7 @@ function addToolTip(){
     
     tippy('.infobox', {
         content: ''.concat("Basierend auf<a href = 'https://de.wikipedia.org/wiki/Levenshtein-Distanz' target='_blank'> Levenshtein Distanzen</a>, ",
-        "werden prozentuale Abweichungen zwischen den Versen angegeben.</br>",
-        "sdfsdfdsf"),
+        "werden prozentuale Abweichungen zwischen den Versen angegeben.</br>"),
         placement: "bottom",
         multiple: true,
         trigger: 'click',
