@@ -4,8 +4,9 @@
     font-family: "tang";
     src: local("Tangerine-Regular.ttf") format("ttf");
 }
-p{
+body{
     font-family: "tang";
+    font-size: 1.3em;
 }
 
 #sidebar{

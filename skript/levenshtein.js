@@ -7,7 +7,7 @@ var activeCats = {
     '4b' : [0.8, true],
     '4c' : [0.9, true],
     5 : [1, true],
-    6 : [1, false]
+    6 : [1.1, false]
 };
 
 window.onload = function() {

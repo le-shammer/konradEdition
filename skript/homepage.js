@@ -6,6 +6,7 @@ var main = function () {
     changeCertainColum('col2', 'wer');
     changeCertainColum('col3', 'das');
     changeCertainColum('col4', 'liestistdoof');
+    $(".compare").addClass("comparehidden");
 
     //checkpw();
 
