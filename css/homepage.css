@@ -37,7 +37,9 @@ body{
     border-bottom:1px solid #8ABC8C;
 }
 
-
+.compare{
+    font-size: 0.8em;
+}
 .chapter:hover{
     background-color:#66666613;
     color:black;
